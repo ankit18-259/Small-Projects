@@ -1,72 +1,95 @@
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
+
 
 int main()
 {
-    char morse[256];                                    //Declare a string array to hold code
-    int i=0;                                            //Counter variable
-    fgets(morse, sizeof(morse), stdin);                 //Reads the string array
-    while(i<256)                                        //Loop to print array in Morse
+
+    char arr[256];                            
+    int i=0, j;
+    printf("****************************************************************\n");
+    printf("*************************Morse Code*****************************\n");
+    printf("1. Input Morse\n2. Input English");
+    printf("\n\n");
+    printf("                                       Made by- Ankit Sharma\n");
+    printf("****************************************************************\n");
+    printf("****************************************************************\n");
+    printf("Your Choice: ");
+    scanf("%d",&j);
+    fgets(arr, sizeof(arr), stdin);
+    
+  switch(j)
     {
-        switch(morse[i])    
-        {
-            case 'A': printf(".- ");
+    case 1:
+            break;
+
+                    
+    case 2: 
+            while(i<256)                                        
+            {
+                switch(arr[i])    
+                {
+                    case 'A': printf(".- ");
                       break;
-            case 'B': printf("-... ");
+                    case 'B': printf("-... ");
                       break;
-            case 'C': printf("-.-. ");
+                    case 'C': printf("-.-. ");
                       break;
-            case 'D': printf("-.. ");
+                    case 'D': printf("-.. ");
                       break;
-            case 'E': printf(". ");
+                    case 'E': printf(". ");
                       break;
-            case 'F': printf("..- ");
+                    case 'F': printf("..- ");
                       break;
-            case 'G': printf("--. ");
+                    case 'G': printf("--. ");
                       break;
-            case 'H': printf(".... ");
+                    case 'H': printf(".... ");
                       break;
-            case 'I': printf(".. ");
+                    case 'I': printf(".. ");
                       break;
-            case 'J': printf(".--- ");
+                    case 'J': printf(".--- ");
                       break;
-            case 'K': printf("-.- ");
+                    case 'K': printf("-.- ");
                       break;
-            case 'L': printf(".-.. ");
+                    case 'L': printf(".-.. ");
                       break;
-            case 'M': printf("-- ");
+                    case 'M': printf("-- ");
                       break;
-            case 'N': printf("-. ");
+                    case 'N': printf("-. ");
                       break;
-            case 'O': printf("--- ");
+                    case 'O': printf("--- ");
                       break;
-            case 'P': printf(".--. ");
+                    case 'P': printf(".--. ");
                       break;
-            case 'Q': printf("--.- ");
+                    case 'Q': printf("--.- ");
                       break;
-            case 'R': printf(".-. ");
+                    case 'R': printf(".-. ");
                       break;
-            case 'S': printf("... ");
+                    case 'S': printf("... ");
                       break;
-            case 'T': printf("- ");
+                    case 'T': printf("- ");
                       break;
-            case 'U': printf("..- ");
+                    case 'U': printf("..- ");
                       break;
-            case 'V': printf("...- ");
+                    case 'V': printf("...- ");
                       break;
-            case 'W': printf(".-- ");
+                    case 'W': printf(".-- ");
                       break;
-            case 'X': printf("-..- ");
+                    case 'X': printf("-..- ");
                       break;
-            case 'Y': printf("-.-- ");
+                    case 'Y': printf("-.-- ");
                       break;
-            case 'Z': printf("--.. ");
+                    case 'Z': printf("--.. ");
                       break;
-            case ' ': printf("  ");
+                    case ' ': printf("  ");
                       break;
         
-        }
-        i++;
+                }   
+                i++;
+            }
+            break;
+        
     }
     return 0;
 }
