@@ -50,3 +50,18 @@ elif [ $c -gt $a ] && [ $c -gt $b ] ; then
 fi
 
 __________________________________________________________________________________
+
+#!/bin/bash
+
+a=$1
+
+fact=1
+counter=1
+
+while [ $counter -le $a ]
+do
+    $fact =  $fact * $counter
+    $counter += 1
+done
+
+echo $fact
