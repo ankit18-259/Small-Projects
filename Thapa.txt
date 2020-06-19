@@ -1,0 +1,52 @@
+#!/bin/bash
+
+a=$1
+
+b=$2
+
+c=$(( a + b ))
+
+echo Addition of $1 and $2 is $c
+
+__________________________________________________________________________________
+
+#!/bin/bash
+
+a=$1
+
+b=$2
+
+if [ $a == $b ]
+then
+
+    echo Both Numbers are equal
+
+elif [ $a != $b ]
+then
+
+    echo Both Numbers arent equal
+
+fi
+
+__________________________________________________________________________________
+
+
+#!/bin/bash
+
+a=$1
+
+b=$2
+
+c=$3
+
+if [ $a -gt $b ] && [ $a -gt $c ] ; then
+    echo $a is greatest
+
+elif [ $b -gt $a ] && [ $b -gt $c ] ; then
+    echo $b is greatest
+
+elif [ $c -gt $a ] && [ $c -gt $b ] ; then
+    echo $c is greatest
+fi
+
+__________________________________________________________________________________
